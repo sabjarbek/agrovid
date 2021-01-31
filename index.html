@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <title>Задачи  по алгоритмизации</title>
+</head>
+<body>
+<h1>Задачи  по алгоритмизации</h1>
+<p>Вариант №2 Лилиан</p>
+
+<script>
+    // 1. Найти длину окружности L и площадь круга S заданного радиуса R: L=2*3.14*R, S=3.14*R2
+    "use strict";
+    let r=1;
+    let l;
+    let s;
+    l=2*3.14*r;
+    s=3.14*Math.pow(r, 2);
+    document.write(s+"</BR>");
+    document.write(l);
+    document.write("</BR>");
+    //2. Найти наибольшего числа из двух чисел x и y.
+    Math.max(1, 2);   //  20
+    Math.max(-1, -2); // -10
+    Math.max(-1, 2);  //  20
+    //3.	Даны натуральные числа от 35 до 87. Вывести на консоль те из них, которые при делении на 7 дают остаток 1, 2 или 5.
+     let m;
+    for(let n=35; n<87; n++){
+        m=(n%7);
+        if(m==1){
+            document.write(n+" ");
+        }
+        else if(m==2){
+            document.write(n+" ");
+        }
+        else if(m==5){
+            document.write(n+" ");
+        }
+    };
+    document.write('</br>')
+    //36 37 40 43 44 47 50 51 54 57 58 61 64 65 68 71 72 75 78 79 82 85 86
+    //4.	Составить программу для циклических стуктур
+    //4.1
+
+    let b= 0;
+    let sum=0;
+    for(let a =1; a<11; a++){
+       b=2/(Math.pow(a, 3)*(a+1));
+        sum=sum+b;
+    };
+    document.write(sum);
+    //ответ 1.1137103271971234
+    //4.2
+    let e=0;
+    let esum=0;
+    for(let d =1; d<15; d++){
+     e=(Math.pow(d, 2)+Math.abs(d-2))/(Math.log(d)+(3*d));
+        esum=esum+e;
+    };
+    document.write("<br/>"+esum)
+    //ответ 35.365128361319755
+    //4.3
+    let f=0;
+    let u=0;
+    let fsum=0;
+    for(let q=1; q<15; q++){
+        for(let p=1; p<5; p++){
+        f=((q*p)+(Math.pow(q, -p)+2))/(Math.log(q)+(3*p))
+        fsum=fsum+f;
+        }
+        u=u+fsum;
+        fsum=0;
+    }
+    document.write("<br/>"+u)
+    //ответ 119.78521157691868
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+</body>
+</html>
